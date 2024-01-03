@@ -24,6 +24,7 @@ export const Slider: React.FC<SliderProps> = ({
         type="range"
         min="0"
         max="360"
+        step="10"
         onChange={(e) => setHue(parseInt(e.target.value))}
       />
       <input
@@ -31,6 +32,7 @@ export const Slider: React.FC<SliderProps> = ({
         type="range"
         min="0"
         max="100"
+        step="10"
         onChange={(e) => setSat(parseInt(e.target.value))}
       />
       <input
@@ -38,6 +40,7 @@ export const Slider: React.FC<SliderProps> = ({
         type="range"
         min="0"
         max="100"
+        step="10"
         onChange={(e) => setLum(parseInt(e.target.value))}
       />
     </div>
